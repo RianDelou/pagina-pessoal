@@ -1,0 +1,27 @@
+body {
+    background-color:#210124;
+    color: #EFF6EE;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 300px; 
+    height: 300px; 
+    background-size: cover;
+}
+
+strong {
+    color: #B98EA7;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #EFF6EE
+}
+
+
+
