@@ -1,27 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    box-sizing: border-box;
+    height: 100vh;
     background-color:#210124;
     color: #EFF6EE;
-    font-size: 24px;
+}
+
+.apresentacao {
+    margin: 15%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-img {
-    width: 300px; 
-    height: 300px; 
-    background-size: cover;
+.apresentacao__conteudo {
+    width: 615px;
 }
 
-strong {
-    color: #B98EA7;
-    
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
 }
 
-a {
-    text-decoration: none;
-    color: #EFF6EE
+.apresentacao__conteudo__texto {
+    font-size: 24px;
 }
 
+.titulo-destaque {
+    color: #B98EA7; 
+}
 
-
+/* exemplo de comentario no css*/

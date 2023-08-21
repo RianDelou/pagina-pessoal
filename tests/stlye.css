@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: azure;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
