@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +20,7 @@ body {
 }
 
 .apresentacao__conteudo {
+    font-family: 'Bricolage Grotesque', sans-serif;
     width: 615px;
 }
 
@@ -27,6 +30,11 @@ body {
 
 .apresentacao__conteudo__texto {
     font-size: 24px;
+}
+
+.apresentacao__links {
+   display: flex;
+   justify-content: space-between;
 }
 
 .titulo-destaque {
