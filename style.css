@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,600;10..48,800&display=swap');
 
 * {
     margin: 0;
@@ -28,6 +28,10 @@ body {
     font-size: 36px;
 }
 
+.titulo-destaque {
+    color: #B98EA7; 
+}
+
 .apresentacao__conteudo__texto {
     font-size: 24px;
 }
@@ -37,8 +41,29 @@ body {
    justify-content: space-between;
 }
 
-.titulo-destaque {
-    color: #B98EA7; 
+.apresentacao__links__link {
+    background-color: #B98EA7;
+    color: #210124;
+    font-size: 18px;
+    font-weight: 600;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    border-style: outset;
+    border-radius: 16px;
+    padding: 15px 0; 
+    
 }
 
+.apresentacao__links__link:hover {
+    color:aliceblue;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.apresentacao__links__discord {
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+}
 /* exemplo de comentario no css*/
