@@ -11,19 +11,28 @@ body {
 
 .header {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nome {
+    font-size: larger;
+    margin-top: 10px;
 }
 
 .main {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+   display: flex;
+   justify-content: space-around;
+   font-size: larger;
+   
     
 }
 
 .footer {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: end;
+    
 }
