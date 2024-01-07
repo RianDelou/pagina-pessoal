@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap');
+
 
 * {
     margin: 0;
@@ -15,14 +16,14 @@ body {
 .apresentacao {
    display: flex;
    justify-content: space-evenly;
-   align-items: center;
-   padding: 15% /* coloquei padding porque com o margin a barra de scroll aparece*/
+   align-items: center; 
+   padding: 10% 15%;
     
 }
 
 .apresentacao__conteudo {
-    font-family: 'Bricolage Grotesque', sans-serif;
-    width: 615px;
+    font-family: 'DM Sans', sans-serif;
+    width: 510px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -30,7 +31,7 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 36px;
+    font-size: 35px;
 }
 
 .titulo-destaque {
@@ -38,38 +39,48 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 24px;
+    font-size: 23px;
 }
 
 .apresentacao__links {
    display: flex;
-   justify-content: space-between;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px
+}
+
+.apresentacao__links__texto {
+    font-family: 'DM Sans', sans-serif;
 }
 
 .apresentacao__links__link {
-    background-color: #B98EA7;
-    color: #210124;
-    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: #EFF6EE;
+    font-size: 20px;
     font-weight: 600;
-    width: 180px;
+    width: 300px;
     text-align: center;
     text-decoration: none;
     border-style: outset;
-    border-radius: 16px;
-    padding: 15px 0; 
+    border-radius: 13px;
+    border: 2px solid #B98EA7; /* estiliza a borda, o primeiro parametro é o tamanho dela, o segundo é o estilo dela e o terceiro é a cor */ 
+    padding: 16px 0; 
     
 }
 
 .apresentacao__links__link:hover {
-    color:aliceblue;
+    border: 2px solid #B98EA7; 
+    background-color: #B98EA7;
     font-weight: 800;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
-.apresentacao__links__discord {
-    font-size: 18px;
-    font-weight: 800;
-    text-align: center;
+.apresentacao__links__link__imagens {
+    width: 10% ; /* alterou a altura e o comprimento das imagens para se ajustar com o texto.*/
+    filter: brightness(0) saturate(100%) /* deixando a imagem preta */ 
+      
 }
 
 /* exemplo de comentario no css*/
