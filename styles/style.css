@@ -8,17 +8,37 @@
 
 body {
     box-sizing: border-box;
-    height: 100vh;
     background-color:#210124;
     color: #EFF6EE;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 22.1%; /* 22% alinhamento */
+}
+
+.cabecalho__nav {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__nav__link {
+    color:#B98EA7;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cabecalho__nav__link:hover {
+    color: #EFF6EE;
+    transition: 1s;
 }
 
 .apresentacao {
    display: flex;
    justify-content: space-evenly;
    align-items: center; 
-   padding: 10% 15%;
-    
+   padding: 9.3% 15%;   
 }
 
 .apresentacao__conteudo {
@@ -67,7 +87,6 @@ body {
     border-radius: 13px;
     border: 2px solid #B98EA7; /* estiliza a borda, o primeiro parametro é o tamanho dela, o segundo é o estilo dela e o terceiro é a cor */ 
     padding: 16px 0; 
-    
 }
 
 .apresentacao__links__link:hover {
@@ -79,8 +98,17 @@ body {
 
 .apresentacao__links__link__imagens {
     width: 10% ; /* alterou a altura e o comprimento das imagens para se ajustar com o texto.*/
-    filter: brightness(0) saturate(100%) /* deixando a imagem preta */ 
+    filter: grayscale(100%) brightness(0) invert(100%); /* deixando a imagem branca */ 
       
 }
 
+.rodape {
+    color:black;
+    background-color: #B98EA7;
+    padding: 1%;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
 /* exemplo de comentario no css*/
