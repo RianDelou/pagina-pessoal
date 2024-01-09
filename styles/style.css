@@ -45,7 +45,7 @@ body {
    display: flex;
    justify-content: space-evenly;
    align-items: center; 
-   padding: 9.3% 15%;   
+   padding: 7% 15%;   
 }
 
 .apresentacao__conteudo {
@@ -54,7 +54,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
 }
 
 .apresentacao__conteudo__titulo {
@@ -104,7 +103,7 @@ body {
 }
 
 .apresentacao__links__link__imagens {
-    width: 10% ; /* alterou a altura e o comprimento das imagens para se ajustar com o texto.*/
+    width: 10%; /* alterou a altura e o comprimento das imagens para se ajustar com o texto.*/
     filter: grayscale(100%) brightness(0) invert(100%); /* deixando a imagem branca */ 
       
 }
