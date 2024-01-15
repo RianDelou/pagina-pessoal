@@ -4,7 +4,7 @@ function som () {
     audio.play();
 }
 
-const miniListaLinks = document.querySelectorAll(".apresentacao__links__link");
+const miniListaLinks = document.querySelectorAll(".apresentacao__links__navegacao");
 
 for(let i = 0; i < miniListaLinks.length; i++) {
     miniListaLinks[i].onclick = som;
