@@ -123,7 +123,7 @@ body {
     font-weight: 400;
 }
 
-@media (max-width: 1060px) { /* (para telas mobile) isso é aplicado apenas se o tamanho da tela for no MAXIMO de 1250, maior que isso a outra estilização é aplicada. */
+@media (max-width: 1060px) { /* (para telas mobile) isso é aplicado apenas se o tamanho da tela for no MAXIMO de 1060, maior que isso a outra estilização é aplicada. */
 
     .cabecalho {
         padding: 6%;    
