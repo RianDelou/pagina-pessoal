@@ -143,6 +143,19 @@ body {
         width: auto;
     }
 
+    .apresentacao__conteudo__titulo {
+        font-size: 1.9rem;
+    }
+
+    .apresentacao__links__navegacao {
+        width: 270px; /* coloquei em px porque senti que a visualização mobile ficaria melhor assim, com '%' a adaptação fica um pouco desconfortavel em um determinado ponto*/
+    }
+
+    .apresentacao__links__link__imagens {
+        width: 30px; /* alterou a altura e o comprimento das imagens para se ajustar com o texto.*/
+          
+    }
+
     .apresentacao__imagem {
         width: 40%;
     }
