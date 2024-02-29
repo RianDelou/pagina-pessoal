@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>:D</title>
-    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="./Imagens/kel.jpg">
     <link rel="stylesheet" href="./styles/style.css">   
     <script src = "main.js" defer></script>
 </head>
 <body>
     <header class = "cabecalho">
         <nav class = "cabecalho__nav">
-            <a class = "cabecalho__nav__link active" href = "./index.html">Home</a>
-            <a class = "cabecalho__nav__link" href = "./about.html">Sobre mim</a>
+            <button class = "cabecalho__nav__button active" id="button-home">Home</button>
+            <button class = "cabecalho__nav__button" id="button-sobre-mim">Sobre mim</button>
         </nav>
+            <label class="cabecalho__adicionais">
+                <p class="adicionais__texto-musica">Música :></p>
+                <input type="checkbox" class="adicionais__switch">
+                <div class="adicionais__switch-div"></div>
+            </label>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
@@ -34,6 +39,7 @@
 
     <footer class = "rodape">
         <p>Desenvolvido por Rian</p>
+        <p class="creditos">Música: OMORI - By Your Side (melancholy ver.), versão feita por: preepoe</p>
     </footer>
 
 

@@ -20,6 +20,7 @@ body {
 }
 
 .cabecalho {
+    display: flex;
     padding: 2% 0% 0% 22.1%; 
 }
 
@@ -28,28 +29,91 @@ body {
     gap: 80px;
 }
 
-.cabecalho__nav__link {
+.cabecalho__nav__button {
     color: var(--corTerciaria);
+    background-color: var(--corPrimaria);
     font-family: var(--fonte);
     font-size: 1.5rem;
     font-weight: 600;
-    text-decoration: none;
+    border-style: none;
+    margin-bottom: 20%;
 }
 
 .active {
     color: var(--corSecundaria);
 }
 
-.cabecalho__nav__link:hover {
+.cabecalho__nav__button:hover {
     color: var(--corSecundaria);
     transition: 0.5s;
+    cursor: pointer;
+}
+
+.cabecalho__adicionais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 70%;
+    cursor: pointer;
+}
+
+.adicionais__texto-musica {
+    font-family: var(--fonte);
+    font-size: 20px;
+    transition: color 0.25s ease;
+}
+
+.adicionais__switch-div {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 1.6rem;
+    width: 5.8rem;
+    height: 3.2rem;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+
+.adicionais__switch-div:before, .adicionais__switch-div:after {
+    content: "";
+}
+
+.adicionais__switch-div:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+    transition: left 0.25s;
+}
+
+.adicionais__switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+}
+
+.adicionais__switch:checked + .adicionais__switch-div {
+    background: var(--corTerciaria);
+}
+
+.adicionais__switch:checked + .adicionais__switch-div:before {
+    left: 3rem;
+}
+
+.adicionais__switch {
+    position: absolute;
+    visibility: hidden;
 }
 
 .apresentacao {
    display: flex;
    justify-content: space-evenly;
    align-items: center; 
-   padding: 7% 15%;   
+   padding: 5% 15%;   
    gap: 80px;
 }
 
@@ -120,11 +184,15 @@ body {
 .rodape {
     color: var(--corPrimaria);
     background-color: var(--corTerciaria);
-    padding: 1%;
+    padding: 0.5%;
     text-align: center;
     font-family: var(--fonte);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+.creditos {
+    font-size: 15px;
 }
 
 @media (max-width: 1060px) { /* (para telas mobile) isso é aplicado apenas se o tamanho da tela for no MAXIMO de 1060, maior que isso a outra estilização é aplicada. */
