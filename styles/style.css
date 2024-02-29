@@ -198,11 +198,22 @@ body {
 @media (max-width: 1060px) { /* (para telas mobile) isso é aplicado apenas se o tamanho da tela for no MAXIMO de 1060, maior que isso a outra estilização é aplicada. */
 
     .cabecalho {
-        padding: 6%;    
+        padding: 6%;   
+        gap: 10px; 
     }
 
     .cabecalho__nav {
         justify-content: center;
+    }
+
+    .cabecalho__adicionais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-left: 10%;
+        cursor: pointer;
     }
 
     .apresentacao {
