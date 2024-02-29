@@ -36,6 +36,10 @@ body {
     text-decoration: none;
 }
 
+.active {
+    color: var(--corSecundaria);
+}
+
 .cabecalho__nav__link:hover {
     color: var(--corSecundaria);
     transition: 0.5s;
